@@ -19,10 +19,6 @@ jobs:
         uses: actions/setup-go@v4
         with:
           go-version-file: 'go.mod'
-      - name: Run golangci-lint
-        uses: golangci/golangci-lint-action@v3
-        with:
-          version: latest
       - name: Release ${{ matrix.os }}
         if: ${{ matrix.os == 'ubuntu-latest' }}
         run: |
