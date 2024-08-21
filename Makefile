@@ -1,6 +1,6 @@
 build:
 	@cargo build --release
-	@cp target/release/libtokenizers.so .
+	@cp target/release/libtokenizers.a .
 	@go build .
 
 build-example:
